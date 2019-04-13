@@ -1,0 +1,76 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "react-devtools": "react-devtools",
+    "android-dev": "SET ENVFILE=.env && react-native run-android",
+    "android-prod": "SET ENVFILE=.env.prod && react-native run-android",
+    "build-android-prod": "SET ENVFILE=.env.prod && cd android && ./gradlew assembleRelease && cd .."
+  },
+  "dependencies": {
+    "@monterosa/react-native-parallax-scroll": "^1.8.0",
+    "axios": "^0.18.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "lottie-react-native": "^2.5.10",
+    "moment": "^2.22.2",
+    "moment-jalaali": "^0.7.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-native": "0.57.0",
+    "react-native-android-wifi": "^0.0.35",
+    "react-native-animatable": "^1.3.0",
+    "react-native-app-intro-slider": "^1.0.1",
+    "react-native-camera": "^1.3.1",
+    "react-native-config": "^0.11.5",
+    "react-native-dialog": "^5.1.0",
+    "react-native-exception-handler": "^2.10.2",
+    "react-native-firebase": "^5.1.0",
+    "react-native-floating-action": "^1.13.0",
+    "react-native-general-calendars": "^1.7.4",
+    "react-native-indicators": "^0.13.0",
+    "react-native-linear-gradient": "^2.4.2",
+    "react-native-loading-spinner-overlay": "^0.5.2",
+    "react-native-masked-text": "^1.7.2",
+    "react-native-material-bottom-navigation-performance": "^0.7.8",
+    "react-native-material-dropdown": "^0.11.1",
+    "react-native-material-textfield": "^0.12.0",
+    "react-native-modal-datetime-picker": "^6.0.0",
+    "react-native-paper": "^2.1.3",
+    "react-native-popup-menu": "github:ghorbani-m/react-native-popup-menu",
+    "react-native-qrcode-scanner": "^1.0.1",
+    "react-native-responsive-screen": "^1.1.10",
+    "react-native-restart": "^0.0.7",
+    "react-native-sectioned-multi-select": "github:ghorbani-m/react-native-sectioned-multi-select",
+    "react-native-splash-screen": "^3.1.1",
+    "react-native-svg": "^8.0.2",
+    "react-native-svg-charts": "^5.2.0",
+    "react-native-tab-view": "^1.2.0",
+    "react-native-uuid": "^1.4.9",
+    "react-native-vector-icons": "^6.0.2",
+    "react-navigation": "2.14.2",
+    "react-navigation-fluid-transitions": "^0.2.6",
+    "react-redux": "^5.0.7",
+    "realm": "^2.15.0",
+    "redux": "^4.0.0",
+    "redux-form": "^7.4.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.15.0",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.45.3",
+    "react-devtools": "^3.3.4",
+    "react-test-renderer": "16.5.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "assets/fonts/"
+    ]
+  }
+}
